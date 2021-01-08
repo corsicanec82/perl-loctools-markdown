@@ -1,0 +1,50 @@
++---+--------------------------------------------------------------+--------------------------------------------------------------+
+|   |source                                                        |output                                                        |
++---+--------------------------------------------------------------+--------------------------------------------------------------+
+| 15|                                                              |                                                              |
+| 16|Paragraph 3 with some **bold** and *italic* text.             |Paragraph 3 with some **bold** and *italic* text.             |
+| 17|> Quote                                                       |> Quote                                                       |
+* 18|Quote Line 2                                                  |> Quote Line 2                                                *
+* 19|Quote Line 3                                                  |> Quote Line 3                                                *
+| 20|> > nested quote                                              |> > nested quote                                              |
+* 21|> nested quote line 2                                         |> > nested quote line 2                                       *
+| 22|> > > third nested quote                                      |> > > third nested quote                                      |
+* 23|third nested quote line 2                                     |> > > third nested quote line 2                               *
+| 24|                                                              |                                                              |
+| 25|This is an unordered list:                                    |This is an unordered list:                                    |
+| 26|- foo                                                         |- foo                                                         |
++---+--------------------------------------------------------------+--------------------------------------------------------------+
+| 29|                                                              |                                                              |
+| 30|This is an ordered list:                                      |This is an ordered list:                                      |
+| 31|1. one                                                        |1. one                                                        |
+* 32|one line 2                                                    |   one line 2                                                 *
+| 33|2. two                                                        |2. two                                                        |
+| 34|   two line 2                                                 |   two line 2                                                 |
+| 35|3. three                                                      |3. three                                                      |
++---+--------------------------------------------------------------+--------------------------------------------------------------+
+| 38|1. one                                                        |1. one                                                        |
+| 39|2. two                                                        |2. two                                                        |
+| 40|3. This is a nested list:                                     |3. This is a nested list:                                     |
+* 41|    * foo                                                     |   * foo                                                      *
+* 42|    * bar                                                     |   * bar                                                      *
+* 43|    * baz                                                     |   * baz                                                      *
+| 44|                                                              |                                                              |
+| 45|This is a code block:                                         |This is a code block:                                         |
+| 46|                                                              |                                                              |
++---+--------------------------------------------------------------+--------------------------------------------------------------+
+| 68|the background color!**                                       |the background color!**                                       |
+| 69|                                                              |                                                              |
+| 70|<div style={{ padding: '20px', backgroundColor: 'tomato' }}>  |<div style={{ padding: '20px', backgroundColor: 'tomato' }}>  |
+* 71|  <h3>This is JSX</h3>                                        |<h3>This is JSX</h3>                                          *
+| 72|</div>                                                        |</div>                                                        |
+| 73|                                                              |                                                              |
+| 74|# And here's another one                                      |# And here's another one                                      |
++---+--------------------------------------------------------------+--------------------------------------------------------------+
+| 76|import { sue, fred } from '../data/authors'                   |import { sue, fred } from '../data/authors'                   |
+| 77|                                                              |                                                              |
+| 78|export const metadata = {                                     |export const metadata = {                                     |
+* 79|  authors: [sue, fred]                                        |authors: [sue, fred]                                          *
+| 80|}                                                             |}                                                             |
+| 81|                                                              |                                                              |
+| 82|# Post about MDX                                              |# Post about MDX                                              |
++---+--------------------------------------------------------------+--------------------------------------------------------------+

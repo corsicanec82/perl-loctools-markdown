@@ -1,0 +1,33 @@
+[
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "First quote"
+         },
+         {
+            "children": [
+               {
+                  "kind": "p",
+                  "text": "Second quote"
+               },
+               {
+                  "children": [
+                     {
+                        "kind": "p",
+                        "text": "Third quote"
+                     }
+                  ],
+                  "kind": "blockquote"
+               }
+            ],
+            "kind": "blockquote"
+         }
+      ],
+      "kind": "blockquote"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   }
+]

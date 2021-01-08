@@ -1,0 +1,22 @@
+[
+   {
+      "kind": "p",
+      "text": "Paragraph text."
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "hr",
+      "text": "- - -"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "Second paragraph."
+   }
+]

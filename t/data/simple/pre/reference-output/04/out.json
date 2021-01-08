@@ -1,0 +1,18 @@
+[
+   {
+      "kind": "p",
+      "text": "Paragraph"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "pre",
+      "text": "Code\nCode line 2"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   }
+]

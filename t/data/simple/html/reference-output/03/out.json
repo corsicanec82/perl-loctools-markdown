@@ -1,0 +1,10 @@
+[
+   {
+      "kind": "p",
+      "text": "Text with<br />some<br />tags"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   }
+]

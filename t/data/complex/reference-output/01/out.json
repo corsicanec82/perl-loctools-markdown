@@ -1,0 +1,383 @@
+[
+   {
+      "kind": "h1",
+      "text": "Title"
+   },
+   {
+      "kind": "p",
+      "text": "Paragraph below."
+   },
+   {
+      "kind": "hr",
+      "text": "- --"
+   },
+   {
+      "context": {
+         "setext": "============="
+      },
+      "kind": "h1",
+      "text": "Another Title"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "Paragraph 1."
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "Paragraph 2."
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "h2",
+      "text": "Subtitle"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "context": {
+         "setext": "----------------"
+      },
+      "kind": "h2",
+      "text": "Another Subtitle"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "Paragraph 3 with some **bold** and *italic* text."
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "Quote\nQuote Line 2\nQuote Line 3"
+         },
+         {
+            "children": [
+               {
+                  "kind": "p",
+                  "text": "nested quote\nnested quote line 2"
+               },
+               {
+                  "children": [
+                     {
+                        "kind": "p",
+                        "text": "third nested quote\nthird nested quote line 2"
+                     }
+                  ],
+                  "kind": "blockquote"
+               }
+            ],
+            "kind": "blockquote"
+         }
+      ],
+      "kind": "blockquote"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "This is an unordered list:"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "foo"
+         }
+      ],
+      "context": {
+         "prefix": "- ",
+         "type": "ul"
+      },
+      "kind": "li"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "bar"
+         }
+      ],
+      "context": {
+         "prefix": "- ",
+         "type": "ul"
+      },
+      "kind": "li"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "baz"
+         }
+      ],
+      "context": {
+         "prefix": "- ",
+         "type": "ul"
+      },
+      "kind": "li"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "This is an ordered list:"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "one\none line 2"
+         }
+      ],
+      "context": {
+         "prefix": "1. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "two\ntwo line 2"
+         }
+      ],
+      "context": {
+         "prefix": "2. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "three"
+         }
+      ],
+      "context": {
+         "prefix": "3. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "This is an ordered list:"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "one"
+         }
+      ],
+      "context": {
+         "prefix": "1. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "two"
+         }
+      ],
+      "context": {
+         "prefix": "2. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "This is a nested list:"
+         },
+         {
+            "children": [
+               {
+                  "kind": "p",
+                  "text": "foo"
+               }
+            ],
+            "context": {
+               "prefix": "* ",
+               "type": "ul"
+            },
+            "kind": "li"
+         },
+         {
+            "children": [
+               {
+                  "kind": "p",
+                  "text": "bar"
+               }
+            ],
+            "context": {
+               "prefix": "* ",
+               "type": "ul"
+            },
+            "kind": "li"
+         },
+         {
+            "children": [
+               {
+                  "kind": "p",
+                  "text": "baz"
+               }
+            ],
+            "context": {
+               "prefix": "* ",
+               "type": "ul"
+            },
+            "kind": "li"
+         }
+      ],
+      "context": {
+         "prefix": "3. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "This is a code block:"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "pre",
+      "text": "x  x\ny    y\nz      z"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "This is a JSON code block:"
+   },
+   {
+      "context": {
+         "info": "json",
+         "text": "```"
+      },
+      "kind": "pre",
+      "text": "{\n    \"foo\": \"bar\"\n}"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "Another one with tildes"
+   },
+   {
+      "context": {
+         "info": "json",
+         "text": "~~~"
+      },
+      "kind": "pre",
+      "text": "{\n    \"foo\": \"bar\"\n}"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "h1",
+      "text": "Hello, *world*!"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "Below is an example of JSX embedded in Markdown. <br /> **Try and change\nthe background color!**"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "html",
+      "text": "<div style={{ padding: '20px', backgroundColor: 'tomato' }}>\n<h3>This is JSX</h3>\n</div>"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "h1",
+      "text": "And here's another one"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "import { sue, fred } from '../data/authors'"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "export const metadata = {\nauthors: [sue, fred]\n}"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "h1",
+      "text": "Post about MDX"
+   },
+   {
+      "kind": "p",
+      "text": "MDX is a JSX in Markdown loader, parser, and renderer for ambitious projects."
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   }
+]

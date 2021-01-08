@@ -1,0 +1,10 @@
+[
+   {
+      "context": {
+         "info": "json",
+         "text": "```"
+      },
+      "kind": "pre",
+      "text": "{\n   \"key\": \"value\"\n}"
+   }
+]

@@ -1,0 +1,66 @@
+[
+   {
+      "kind": "html",
+      "text": "<table>\n<tr>"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "html",
+      "text": "<td>"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "Paragraph in cell 1"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "html",
+      "text": "</td>"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "html",
+      "text": "<td>"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "Paragraph in cell 2"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "html",
+      "text": "</td>"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "html",
+      "text": "</tr>\n</table>"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   }
+]

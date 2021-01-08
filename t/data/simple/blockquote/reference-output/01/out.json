@@ -1,0 +1,11 @@
+[
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "This is a single-line quote."
+         }
+      ],
+      "kind": "blockquote"
+   }
+]

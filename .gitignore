@@ -1,0 +1,13 @@
+~*
+.DS_Store
+*.bak
+MANIFEST
+_build
+blib
+META.*
+MYMETA.*
+Makefile.PL
+*.gz
+Build
+Build.bat
+!t/data/**/reference-output/**

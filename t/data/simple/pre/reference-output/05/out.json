@@ -1,0 +1,10 @@
+[
+   {
+      "kind": "p",
+      "text": "Paragraph\n    Code\n    Code line 2"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   }
+]

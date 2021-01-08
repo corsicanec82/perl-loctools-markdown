@@ -1,0 +1,41 @@
+[
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "Foo"
+         }
+      ],
+      "context": {
+         "prefix": "3. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "Bar"
+         }
+      ],
+      "context": {
+         "prefix": "10. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "Baz"
+         }
+      ],
+      "context": {
+         "prefix": "5. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   }
+]

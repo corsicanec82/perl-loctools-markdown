@@ -1,0 +1,54 @@
+[
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "Foo"
+         }
+      ],
+      "context": {
+         "prefix": "1. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   },
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "Bar"
+         },
+         {
+            "children": [
+               {
+                  "kind": "p",
+                  "text": "Bar one"
+               }
+            ],
+            "context": {
+               "prefix": "* ",
+               "type": "ul"
+            },
+            "kind": "li"
+         },
+         {
+            "children": [
+               {
+                  "kind": "p",
+                  "text": "Bar two"
+               }
+            ],
+            "context": {
+               "prefix": "* ",
+               "type": "ul"
+            },
+            "kind": "li"
+         }
+      ],
+      "context": {
+         "prefix": "2. ",
+         "type": "ol"
+      },
+      "kind": "li"
+   }
+]

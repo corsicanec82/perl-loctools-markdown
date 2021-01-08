@@ -1,0 +1,14 @@
+[
+   {
+      "kind": "p",
+      "text": "Paragraph text."
+   },
+   {
+      "kind": "hr",
+      "text": "***"
+   },
+   {
+      "kind": "p",
+      "text": "Second paragraph."
+   }
+]

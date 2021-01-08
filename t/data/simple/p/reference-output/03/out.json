@@ -1,0 +1,14 @@
+[
+   {
+      "kind": "p",
+      "text": "Paragraph text."
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "Second paragraph."
+   }
+]
