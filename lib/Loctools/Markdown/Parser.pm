@@ -43,7 +43,7 @@ sub process_accumulated {
 
     if ($self->{mode} eq 'blockquote') {
         my @a = map {
-            $_ =~ s/^> //s; $_;
+            $_ =~ s/^>\s?//s; $_;
         } @{$self->{accum}};
         my $text = join("\n", @a);
         my $child = Loctools::Markdown::Parser->new;

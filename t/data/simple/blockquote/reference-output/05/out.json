@@ -1,0 +1,23 @@
+[
+   {
+      "children": [
+         {
+            "kind": "p",
+            "text": "foo"
+         },
+         {
+            "kind": "whitespace",
+            "text": ""
+         },
+         {
+            "kind": "p",
+            "text": "bar"
+         }
+      ],
+      "kind": "blockquote"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   }
+]
