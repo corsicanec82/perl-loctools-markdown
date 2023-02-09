@@ -59,6 +59,14 @@ sub process_accumulated {
             children => $child->parse($text),
             context => $self->{context}
         };
+    # } elsif ($self->{mode} eq 'pre') {
+    #     $ast_node = {
+    #         text_code => join('', @{$self->{accum}}) =~ s/^[\n]//r =~ s/[\n]$//r,
+    #         kind => 'pre'
+    #     };
+    #     if (scalar keys %{$self->{context}} > 0) {
+    #         $ast_node->{context} = $self->{context};
+    #     }
     } else {
         my $text;
         my $kind;
@@ -77,18 +85,29 @@ sub process_accumulated {
             $text = join("\n", @a);
             $kind = 'pre';
         } else {
-            $text = join("\n", @{$self->{accum}});
             $kind = $self->{mode};
+            if ($kind eq 'pre') {
+                $text = join('', @{$self->{accum}}) =~ s/^[\n]//r =~ s/[\n]$//r;
+            } else {
+                $text = join("\n", @{$self->{accum}});
+            }
         }
 
         if ($kind eq 'p' && $text =~ m/^<.*>$/s) {
             $kind = 'html';
         }
 
-        $ast_node = {
-            text => $text,
-            kind => $kind
-        };
+        if ($kind eq 'pre') {
+            $ast_node = {
+                text_code => $text,
+                kind => $kind
+            };
+        } else {
+            $ast_node = {
+                text => $text,
+                kind => $kind
+            };
+        }
         if (scalar keys %{$self->{context}} > 0) {
             $ast_node->{context} = $self->{context};
         }
@@ -125,7 +144,7 @@ sub parse {
 
         my $out_line = $line;
 
-        if ($line =~ m/^\n{2,}$/) {
+        if ($self->{mode} ne 'pre' && $line =~ m/^\n{2,}$/) {
             process_accumulated($self);
 
             # Remove two line breaks
@@ -140,7 +159,7 @@ sub parse {
             };
         }
 
-        if ($line =~ m/^\n+$/) {
+        if ($self->{mode} ne 'pre' && $line =~ m/^\n+$/) {
             next;
         }
 

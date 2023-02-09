@@ -13,6 +13,14 @@
    },
    {
       "kind": "whitespace",
+      "text": "\n\n"
+   },
+   {
+      "kind": "pre",
+      "text_code": "Code line 3"
+   },
+   {
+      "kind": "whitespace",
       "text": ""
    }
 ]

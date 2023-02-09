@@ -282,7 +282,7 @@
    },
    {
       "kind": "pre",
-      "text": "x  x\ny    y\nz      z"
+      "text_code": "x  x\ny    y\nz      z"
    },
    {
       "kind": "whitespace",
@@ -298,7 +298,7 @@
          "text": "```"
       },
       "kind": "pre",
-      "text": "{\n    \"foo\": \"bar\"\n}"
+      "text_code": "{\n    \"foo\": \"bar\"\n}"
    },
    {
       "kind": "whitespace",
@@ -314,7 +314,7 @@
          "text": "~~~"
       },
       "kind": "pre",
-      "text": "{\n    \"foo\": \"bar\"\n}"
+      "text_code": "{\n    \"foo\": \"bar\"\n}"
    },
    {
       "kind": "whitespace",

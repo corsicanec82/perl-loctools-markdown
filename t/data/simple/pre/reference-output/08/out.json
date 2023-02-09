@@ -9,7 +9,7 @@
    },
    {
       "kind": "pre",
-      "text_code": "Code\nCode line 2"
+      "text_code": "Code\nCode line 2\n\n\n\nCode line 3"
    },
    {
       "kind": "whitespace",

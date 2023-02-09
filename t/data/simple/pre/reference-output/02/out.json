@@ -5,6 +5,6 @@
          "text": "```"
       },
       "kind": "pre",
-      "text": "{\n   \"key\": \"value\"\n}"
+      "text_code": "{\n   \"key\": \"value\"\n}"
    }
 ]

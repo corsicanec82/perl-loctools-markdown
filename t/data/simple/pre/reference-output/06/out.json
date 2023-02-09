@@ -5,6 +5,10 @@
          "text": "```"
       },
       "kind": "pre",
-      "text_code": "Some\n   code"
+      "text_code": "Some\n\n\n\n   code\n\n"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
    }
 ]

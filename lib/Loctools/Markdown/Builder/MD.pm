@@ -50,9 +50,9 @@ sub build {
         if ($node->{kind} eq 'pre') {
             if ($node->{context} && $node->{context}->{text} ne '') {
                 my $fence = $node->{context}->{text};
-                push @out, $fence.$node->{context}->{info}."\n".$node->{text}."\n".$fence;
+                push @out, $fence.$node->{context}->{info}."\n".$node->{text_code}."\n".$fence;
             } else {
-                my $text = $node->{text};
+                my $text = $node->{text_code};
                 $text =~ s/\n/\n    /sg;
                 push @out, '    '.$text;
             }

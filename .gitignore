@@ -11,3 +11,4 @@ Makefile.PL
 Build
 Build.bat
 !t/data/**/reference-output/**
+t/data/**/output/
