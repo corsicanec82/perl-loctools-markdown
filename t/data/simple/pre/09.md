@@ -7,6 +7,8 @@
 ---
 ***
 ===
+1. text1
+2. text2
 # head in code
 ## head in code
 ```
@@ -21,5 +23,7 @@ simple text
     ---
     ***
     ===
+    1. text1
+    2. text2
     # head in code
     ## head in code

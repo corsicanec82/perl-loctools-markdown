@@ -210,7 +210,7 @@ sub parse {
             $mode = 'blockquote';
         }
 
-        if ($line =~ m/^(\d+\.\s)/) {
+        if ($self->{mode} ne 'pre' && $line =~ m/^(\d+\.\s)/) {
             process_accumulated($self);
             $mode = 'li';
             $context = {
