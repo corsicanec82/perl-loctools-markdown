@@ -59,14 +59,6 @@ sub process_accumulated {
             children => $child->parse($text),
             context => $self->{context}
         };
-    # } elsif ($self->{mode} eq 'pre') {
-    #     $ast_node = {
-    #         text_code => join('', @{$self->{accum}}) =~ s/^[\n]//r =~ s/[\n]$//r,
-    #         kind => 'pre'
-    #     };
-    #     if (scalar keys %{$self->{context}} > 0) {
-    #         $ast_node->{context} = $self->{context};
-    #     }
     } else {
         my $text;
         my $kind;
@@ -164,13 +156,13 @@ sub parse {
         }
 
         if (scalar @{$self->{accum}} > 0) {
-            if ($line =~ m/^=+$/) {
+            if ($self->{mode} ne 'pre' && $line =~ m/^=+$/) {
                 $self->{mode} = 'h1';
                 $self->{context}->{setext} = $line;
                 next;
             }
 
-            if ($line =~ m/^-+$/) {
+            if ($self->{mode} ne 'pre' && $line =~ m/^-+$/) {
                 $self->{mode} = 'h2';
                 $self->{context}->{setext} = $line;
                 next;
@@ -180,7 +172,7 @@ sub parse {
         # Determine the block mode.
         my $mode = 'p';
         my $context;
-        if ($line =~ m/^(#+)\s+/) {
+        if ($self->{mode} ne 'pre' && $line =~ m/^(#+)\s+/) {
             my $level = length($1);
             $level = 6 if $level > 6;
             $mode = 'h'.$level;
@@ -192,11 +184,11 @@ sub parse {
             $mode = 'whitespace';
         }
 
-        if ($line =~ m/^>/s) {
+        if ($self->{mode} ne 'pre' && $line =~ m/^>/s) {
             $mode = 'blockquote';
         }
 
-        if ($line =~ m/^((\*\s*){3,}|(-\s*){3,}|(=\s*){3,})$/) {
+        if ($self->{mode} ne 'pre' && $line =~ m/^((\*\s*){3,}|(-\s*){3,}|(=\s*){3,})$/) {
             $mode = 'hr';
         }
 
@@ -229,7 +221,7 @@ sub parse {
             $out_line =~ s/\d+\.\s//;
         }
 
-        if ($mode ne 'hr' && $line =~ m/^([\-\*]\s)/) {
+        if ($mode ne 'hr' && $self->{mode} ne 'pre' && $line =~ m/^([\-\*]\s)/) {
             process_accumulated($self);
             $mode = 'li';
             $context = {

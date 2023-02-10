@@ -1,0 +1,46 @@
+[
+   {
+      "kind": "h1",
+      "text": "block with different elements"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "context": {
+         "info": "python",
+         "text": "```"
+      },
+      "kind": "pre",
+      "text_code": ">>> 100 / 0\n- some text\n* another text\n---\n***\n===\n# head in code\n## head in code"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "h2",
+      "text": "Paragraph"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "p",
+      "text": "simple text"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   },
+   {
+      "kind": "pre",
+      "text_code": ">>> 100 / 0\n- some text\n* another text\n---\n***\n===\n# head in code\n## head in code"
+   },
+   {
+      "kind": "whitespace",
+      "text": ""
+   }
+]
